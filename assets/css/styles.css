@@ -209,17 +209,31 @@ img{
   right: 0;
   bottom: 0;
   padding-top: 20px;
-  width: 50px; 
+  width: 100%; 
   height: auto;
 
 }
-.imghome{
+.imghome {
+  float: right; 
   margin-top: 20px;
   border-top: 20px;
   border-radius: 35px;
   padding-top: 20px;
   padding: 20px;
-  height: auto;
+  max-width: 100%; 
+  height: auto; 
+  width: 100%; 
+}
+
+@media screen and (max-width: 768px) {
+  .imghome {
+    float: right;
+    margin-top: 10px; 
+    padding-top: 10px; 
+    border-top: 10px; 
+    border-radius: 25px; 
+    padding: 10px; /
+  }
 }
 
 .button{
